@@ -1,0 +1,240 @@
+body,div,ul,li,ol,p,span,h1,h2,h3,h4,h5,h6,a,img,table,form{margin:0;padding:0;}
+body{font:16px/1.5 "Microsoft Yahei" ;}
+ul{list-style:none;}
+a{text-decoration:none;}
+.clearfix:after{content:''; display:block; clear:both;}
+/*头部样式*/
+#head{
+    position: relative;
+    z-index:999;
+    min-width: 1000px;
+    width: 100%;
+    height: 32px;
+    border-bottom:1px solid #eee;
+}
+#head em{
+    font-style:normal;
+}
+#weather{
+    margin: 7px 0 0 15px;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size:12px;
+    text-align: center;
+    cursor: pointer;
+}
+.show_weather{
+    display: inline-block;
+    height: 20px;
+    white-space: nowrap;
+}
+.show_weather span{
+    display: inline-block;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.show_icon{
+    margin-right:9px;
+}
+.weather_icon{
+    width:22px;
+    height:22px;
+    background: url(http://app1.showapi.com/weather/icon/day/01.png) no-repeat center / 100%;
+}
+#show_pollution{
+    display: inline-block;
+    height: 20px;
+}
+.show_pollution_name{
+    color: #38f;
+    font-weight: bold;
+    margin-right: 7px;
+}
+.show_pollution_num,.show_vertical{
+    margin-right: 7px;
+}
+
+
+#s_icons{
+    height:32px;
+    font-size:12px;
+}
+#s_icons a{
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 19px;
+    color: #555;
+    text-decoration: underline;
+    outline: none;
+    display: inline-block;
+    text-shadow: none;
+}
+
+
+
+#head_menu{
+    position: absolute;
+    top:0;
+    right:0;
+    height:100%;
+    color:#999;
+    font-size: 13px;
+}
+#head_menu a{
+    float:left;
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 19px;
+    color: #555;
+    font-weight: bold;
+    text-decoration: underline;
+    outline: none;
+    display: inline-block;
+    text-shadow: none;
+}
+#setting_nav{
+    display: none;
+    position: absolute;
+    top:32px;
+    right:84px;
+    width: 70px;
+    border:1px solid #ddd;
+    box-shadow: 0 0 5px #ddd;
+    font-size: 12px;
+}
+#setting_nav a{
+    display: block;
+    width: 100%;
+    height:26px;
+    margin:0;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 26px;
+    text-align: center;
+    color:#333;
+}
+
+#setting_nav a:hover{
+    color:#fff;
+    background: #398bfb;
+}
+#setting_nav .arrow em,#setting_nav .arrow i{
+    display: block;
+    position: absolute;
+    top:-10px;
+    left:0px;
+    right: 0px;
+    margin:auto;
+    width: 0px;
+    height: 0px;
+    border:5px solid transparent;
+}
+#setting_nav .arrow em{
+    border-bottom-color: #d8d8d8;
+}
+#setting_nav .arrow i{
+    border-bottom-color: #fff;
+    top:-9px;
+
+}
+#setting{
+    float:left;
+}
+#head_menu #setting a{
+    font-weight: normal;
+}
+#setting:hover #setting_nav{
+    display: block;
+}
+#head_menu .more_pro{
+    width:86px;
+    height: 32px;
+    background: #398bfb;
+    line-height: 32px;
+    text-align: center;
+    font-size: 13px;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*百度logo样式*/
+#image{
+    position: relative;
+    width:270px;
+    height: 129px;
+    margin:40px auto;
+}
+#image a{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*搜索框样式*/
+#form{
+    position: relative;
+    width:641px;
+    height: 40px;
+    margin:30px auto;
+}
+#inp{
+    position: relative;
+    width:480px;
+    height:26px;
+    line-height: 26px;
+    text-indent:10px;
+    padding: 6px 48px 6px 7px;
+    font-size: 14px;
+    border-top: 1px solid #999 !important;
+    border-left: 1px solid #999 !important;
+    border-bottom: 1px solid #b3b3b3 !important;
+}
+
+/*搜索信息显示样式*/
+#list{
+    width:536px;
+    border:1px solid #ccc;
+    border-top:none;
+    /*box-shadow: 1px 1px 2px #999;*/
+}
+#list li{
+    text-indent: 10px;
+    height:30px;
+    line-height:30px;
+}
+#list li a{
+    display:block;
+    height:100%;
+    font-size:14px;
+    color:#000;
+    cursor: default;
+}
+#list li a:hover,#list li a.active{
+    background:#ccc;
+}
+
+/*百度一下按钮样式*/
+
+#btn{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:104px;
+    height:40px;
+    border:none;
+    background:#3385ff;
+    color:#fff;
+    font-size:16px;
+    text-align: center;
+    line-height:35px;
+    cursor: pointer;
+}
+#btn:hover{
+    background: #2e76e3;
+}
