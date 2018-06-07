@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="Generator" content="EditPlus®">
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/bd.css">
+        <script src="js/bd.js"></script>
+     </head>
+     <body>
+        <!--头部-->
+        <div id="head">
+            <div id="weather">
+                <div class="show_weather">
+                    <span class="show_cityname"></span>
+                    <span class="show_icon">
+                        <span class="weather_icon"></span>
+                        <em class="show_icon_temp"></em>
+                    </span>
+                </div>
+                <div id="show_pollution">
+                    <span class="show_airParm">
+                        <em class="show_pollution_name"></em>
+                        <em class="show_pollution_num"></em>
+                    </span>
+                    <span class="show_vertical">|</span>
+                </div>
+            </div>
+            <div id="s_icons">
+                 <a href="#" class="s_skin" title="换肤">
+                     <span class="title">换肤</span>
+                 </a>
+                 <a href="#" class="s_msg" title="消息">
+                     <span class="title">消息</span>
+                 </a>
+             </div>
+            <div id="head_menu">
+                <a href="http://news.baidu.com" target="_blank" class="mnav">新闻</a>
+                <a href="http://www.hao123.com" target="_blank" class="mnav">hao123</a>
+                <a href="http://maps.baidu.com" target="_blank" class="mnav">地图</a>
+                <a href="http://v.baidu.com" target="_blank" class="mnav">视频</a>
+                <a href="http://tieba.baidu.com" target="_blank" class="mnav">学术</a>
+                <a href="http://xueshu.baidu.com" target="_blank" class="mnav">贴吧</a>
+                <div id="setting">
+                    <a href="javascript:;" target="_blank" class="mnav" >设置</a>
+                    <div id="setting_nav">
+                        <span class="arrow"><em></em><i></i></span>
+                        <a href="javascript:;">搜索设置</a>
+                        <a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+                        <a href="javascript:;">关闭预测</a>
+                        <a href="http://i.baidu.com/my/history?from=ps" target="_blank">搜索历史</a>
+                    </div>
+                </div>
+                <a href="http://www.baidu.com/more/" class="more_pro" target="_blank"> 更多产品</a>
+            </div>
+        </div>
+        <!--百度logo-->
+        <div id="image">
+             <image src="https://www.baidu.com/img/bd_logo1.png?where=super" width="270" height="129"></image>
+             <a style="cursor:pointer;outline:none;" href="//www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&amp;tn=SE_Pclogo_6ysd4c7a&amp;sa=ire_dl_gh_logo&amp;rsv_dl=igh_logo_pc" target="_blank" title="点击一下，了解更多"></a>
+        </div>
+        <!--搜索框-->
+        <div id="form">
+            <input type="text" id="inp">
+            <ul id="list">
+                <!--<li>你好</li>-->
+                <!--<li>aaaaa</li>-->
+            </ul>
+            <input id="btn" type="button" value="百度一下">
+        </div>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=a29ee83f1e86e70461ce7f6b9d263427&plugin=AMap.CitySearch"></script>
+        <!--<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>-->
+        <script src="js/bd.js"></script>
+     </body>
+</html>

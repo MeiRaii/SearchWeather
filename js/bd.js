@@ -85,7 +85,7 @@ function eFn() {
         var scr = document.createElement("script");
         scr.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+val+"&cb=zg&_=1521260069116";
         document.body.appendChild(scr);
-        //
+
         scr.onload = function () {
             document.body.removeChild(scr);
         }
@@ -187,7 +187,6 @@ function success_weather(data) {
     aShow_icon_temp.innerHTML = wea.now.temperature + '℃';//温度
     aShow_pollution_name.innerHTML = wea.now.aqiDetail.quality;//空气质量
     aShow_pollution_num.innerHTML = wea.now.aqiDetail.pm10;//颗粒物（粒径小于等于10μm）1小时平均
-
 
     aWeather.onclick = function () {
         //console.log(wea);
